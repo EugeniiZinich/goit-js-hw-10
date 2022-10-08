@@ -18,3 +18,45 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.country_info--container,
+.county-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.county-list__item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.country_info--name,
+.county-list__item > span {
+  margin-left: 10px;
+}
+
+.county-list__item {
+  animation: spin 0.5s linear;
+}
+
+.country_info--container,
+.country_info--list {
+  animation: spin 0.5s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
